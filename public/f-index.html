@@ -1,0 +1,2700 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://openit.site/hi/f-dl?f=ert# -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <link rel="icon" type="image/x-icon" href="https://openit.site/festival/images/common/icon.png">
+    <link rel="icon" type="image/png" href="https://openit.site/festival/images/common/icon.png">
+
+    <!-- Apple Touch Icon (at least 200x200px) -->
+    <link rel="apple-touch-icon" href="https://openit.site/festival/images/common/icon.png">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="text/css" rel="stylesheet" href="./f-dl_files/festival.css" media="screen,projection">
+
+    <title></title>
+
+    <meta name="robots" content="noindex,nofollow">
+
+
+
+
+    <script src="./f-dl_files/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        /* background of main image */
+        .card.blue-grey.darken-1.hoverable {
+            background: linear-gradient(to right, black, black) !important;
+        }
+
+        /* super background image */
+
+        /* inner background image */
+        .card.blue-grey.darken-1.hoverable {
+            background-image: url(https://openit.site/festival/images/common/new_back/stars2.gif) !important;
+        }
+
+        /* super background color */
+        .bg {
+            background-color: #000;
+        }
+
+        /* timer color */
+    </style>
+    <script>
+        var country_code = 'IN';
+
+        var current_url = window.location.href;
+        var current_url_array = current_url.split('/');
+        var current_url_array_len = current_url_array.length;
+
+        var festival_arr = current_url_array[current_url_array_len - 1].split('?');
+
+        // for new website
+        var f_hyphen = '/';
+        if (festival_arr[0].indexOf('f-') > -1) {
+            f_hyphen = '/f-';
+        }
+        festival_arr[0] = festival_arr[0].replace('f-', '');
+
+
+
+        if (window.location.href.indexOf('~') != -1) {
+            // do nothing
+        } else if (festival_arr[0] == 'dl' || festival_arr[0] == 'ch0' || festival_arr[0] == 'ch' || festival_arr[0] ==
+            'chn' || festival_arr[0] == 'n') {
+            // do nothing
+        } else if (festival_arr.length > 1) {
+            if (current_url_array_len == '4') { // definitely english locale ( could be other locale also ex abraisto)
+                // window.location.href = current_url_array[0] + '//' + current_url_array[2] + f_hyphen + "e3?" + festival_arr[1];
+
+                // Redirect eid fitr to eid adha
+                if (['ef', 'ef1', 'ef2', 'ef3', 'rd', 'me', 'ea', 'ea1', 'ea2', 'isn', 'isn1'].indexOf(festival_arr[
+                    0]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + f_hyphen + "me?" + festival_arr[1];
+                }
+
+                // halloween to thanksgiving
+                if (festival_arr[0] == 'h' || festival_arr[0] == 'td') {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + f_hyphen + "ch?" + festival_arr[1];
+                }
+
+
+            } else {
+
+                // if (festival_arr[0] == 'h') {
+                // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "ch?" + festival_arr[1];
+                // }
+
+
+                // Hebrew people start
+
+                // All israely
+                // if (festival_arr[0] == 'pu' || festival_arr[0] == 'pu1' || festival_arr[0] == 'pe' || festival_arr[0] == 'je') {
+                if (['il'].indexOf(current_url_array[3]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "sm?" + festival_arr[1];
+                }
+                // }
+
+
+                // All israely language is not hebrew
+                if (festival_arr[0] == 'yk' || festival_arr[0] == 'ros' || festival_arr[0] == 'pe' || festival_arr[0] ==
+                    'je' || festival_arr[0] == 'suk' || festival_arr[0] == 'sm' || festival_arr[0] == 'hn') {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "sm?" + festival_arr[1];
+                }
+                // Hebrew people end
+
+
+
+                if (['ar'].indexOf(current_url_array[3]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "me?" + festival_arr[1];
+                } else if (['tr'].indexOf(current_url_array[3]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "me?" + festival_arr[1];
+                } else if (['id'].indexOf(current_url_array[3]) > -1) {
+                    if (festival_arr[0] != 'e' || festival_arr[0] != 'e1') {
+                        // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "me?" + festival_arr[1];
+                    }
+                } else if (['ms'].indexOf(current_url_array[3]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "me?" + festival_arr[1];
+                } else if (['ef', 'ef1', 'ef2', 'ef3', 'rd', 'me', 'ea', 'ea1', 'ea2', 'isn', 'isn1'].indexOf(
+                        festival_arr[0]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "me?" + festival_arr[1];
+                }
+
+
+                // else if (festival_arr[0] == 'fd' || festival_arr[0] == 'fd1' || festival_arr[0] == 'fd2' ) {
+                // 	window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + 'in' + "/gc?" + festival_arr[1];
+                // }
+                else if (['ru'].indexOf(current_url_array[3]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "rsd?" + festival_arr[1];
+                } else if (['en'].indexOf(current_url_array[3]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "m?" + festival_arr[1];
+                }
+
+
+                // do not redirect islamic festivals
+                else if (['ef', 'ef1', 'ef2', 'ef3', 'rd', 'me', 'ea', 'ea1', 'ea2', 'isn', 'isn1'].indexOf(
+                        festival_arr[0]) == -1) {
+
+                    if (['in'].indexOf(current_url_array[3]) > -1) {
+                        window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' +
+                            current_url_array[3] + f_hyphen + "dl?" + festival_arr[1];
+                    } else if (['hi'].indexOf(current_url_array[3]) > -1) {
+                        window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' +
+                            current_url_array[3] + f_hyphen + "dl?" + festival_arr[1];
+                    } else if (['mr'].indexOf(current_url_array[3]) > -1) {
+                        window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' +
+                            current_url_array[3] + f_hyphen + "dl?" + festival_arr[1];
+                    } else if (['te'].indexOf(current_url_array[3]) > -1) {
+                        window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' +
+                            current_url_array[3] + f_hyphen + "dl?" + festival_arr[1];
+                    } else if (['ta'].indexOf(current_url_array[3]) > -1) {
+                        window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' +
+                            current_url_array[3] + f_hyphen + "dl?" + festival_arr[1];
+                    } else if (['bn'].indexOf(current_url_array[3]) > -1) {
+                        window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' +
+                            current_url_array[3] + f_hyphen + "dl?" + festival_arr[1];
+                    }
+
+                } else if (['uk'].indexOf(current_url_array[3]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "dd?" + festival_arr[1];
+                } else if (['fi'].indexOf(current_url_array[3]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "m?" + festival_arr[1];
+                }
+
+
+
+
+
+
+                // else if ( ['de', 'it', 'fr', 'fi', 'pt', 'es', 'ru', 'en', 'hr'].indexOf(current_url_array[3]) > -1 ) {
+                // 	window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "ch?" + festival_arr[1];
+                // }
+                else if (['de'].indexOf(current_url_array[3]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "ch?" + festival_arr[1];
+                } else if (['it'].indexOf(current_url_array[3]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "ch?" + festival_arr[1];
+                } else if (['pt'].indexOf(current_url_array[3]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "fd?" + festival_arr[1];
+                } else if (['es'].indexOf(current_url_array[3]) > -1) {
+                    // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "fd?" + festival_arr[1];
+                } else if (['it', 'es', 'pt', 'de', 'nl', 'ru', 'pl', 'hr', 'fr', 'ro', 'uk', 'en'].indexOf(
+                        current_url_array[3]) > -1) {
+                    window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[
+                        3] + f_hyphen + "ch?" + festival_arr[1];
+                }
+
+                // else if ( ['it', 'es', 'de', 'nl', 'ru', 'fr'].indexOf(current_url_array[3]) > -1 ) {
+                // window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "v?" + festival_arr[1];
+                // }
+
+
+                // else if ( ['es'].indexOf(current_url_array[3]) > -1 ) {
+                // 	window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "e?" + festival_arr[1];
+                // }
+
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            #ghostery-purple-box {
+                display: none !important
+            }
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="bg notranslate" translate="no" style="max-height: inherit;" data-new-gr-c-s-check-loaded="14.983.0">
+
+
+
+
+    <script src="./f-dl_files/slide.js"></script>
+
+
+
+    <style>
+        .rightcurtain {
+            width: 51%;
+            height: 120%;
+            right: 0px;
+            top: 0px;
+            position: absolute;
+            z-index: 300;
+        }
+
+        .leftcurtain {
+            width: 50%;
+            height: 120%;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            z-index: 200;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+
+
+
+
+
+        .rope {
+            position: absolute;
+            /*top: 20%;*/
+            bottom: 5%;
+            left: 0;
+            right: 0;
+            width: 100%;
+            /*height: 100%;*/
+            z-index: 999999;
+        }
+
+        .rightcurtain img,
+        .leftcurtain img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        @-webkit-keyframes pulse {
+            from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.25, 1.25, 1.25);
+                transform: scale3d(1.25, 1.25, 1.25)
+            }
+
+            to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+        }
+
+        @keyframes pulse {
+            from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.25, 1.25, 1.25);
+                transform: scale3d(1.25, 1.25, 1.25)
+            }
+
+            to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+        }
+
+        .pulse {
+            -webkit-animation: pulse 1s infinite linear;
+            animation: pulse 1s infinite linear
+        }
+    </style>
+
+
+    <script src="./f-dl_files/zounds.min.js"></script>
+    <script>
+        var tiktok = zounds.load("./f-dl_files/diwali2.mp3");
+
+        function playSound() {
+            tiktok.play();
+            // setTimeout(function(){
+            //     tiktok.play();
+            // },5000);
+            // setTimeout(function(){
+            //     tiktok.play();
+            // },10000);
+        }
+
+        function curtainOpen() {
+            playSound();
+            $('.figures').removeClass('hidden');
+            $('.circle-container').removeClass('hidden');
+            $('.timer-text').removeClass('hidden');
+            $('.figure_name').removeClass('hidden');
+            $('.auto_style_main_msg').removeClass('hidden');
+            $('.from_img').removeClass('hidden');
+            $('.main_msg_top').removeClass('hidden');
+            $('.twoimageset').removeClass('hidden');
+            $('.main-msg').removeClass('hidden');
+            $('.slideshow').removeClass('hidden');
+            $('.myslides_div').removeClass('hidden');
+            $('.ltrmarquee').removeClass('hidden');
+            $('.share_block').removeClass('hidden');
+            $('.img_overlap').removeClass('hidden');
+            $('.revolvingcards').removeClass('hidden');
+            $('.user_name2').removeClass('hidden');
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="keypad hidden">
+
+        <style>
+            .table {
+                display: table;
+                height: 100%;
+                width: 100%;
+                position: relative
+            }
+
+            .cell {
+                display: table-cell;
+                vertical-align: middle;
+                position: relative;
+                width: 100%;
+                text-align: center
+            }
+
+            #pincode {
+                overflow: hidden;
+                position: fixed;
+                height: 110%;
+                width: 106%;
+                z-index: 9999;
+                background-color: #272a2f;
+                background-position: center;
+                color: #fff;
+                border-radius: 10px;
+                text-align: center
+            }
+
+            #numbers {
+                max-width: 300px;
+                padding: 0 20px;
+                margin: 0 auto;
+                position: relative;
+                display: block;
+                -webkit-transition: all 1s ease-out;
+                -moz-transition: all 1s ease-out;
+                transition: all 1s ease-out;
+                opacity: 1
+            }
+
+            #numbers.hide {
+                opacity: .3
+            }
+
+            #pincode button {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 10px;
+                background-color: orange;
+                border: 0;
+                color: #000;
+                font-size: 25px;
+                line-height: 50px;
+                border-radius: 100%;
+                opacity: 1;
+                outline: 0;
+                border: 2px solid #272a2f
+            }
+
+            #pincode button:active {
+                background-color: rgba(0, 0, 0, .6);
+                outline: 0
+            }
+
+            #fields {
+                max-width: 200px;
+                padding: 0 20px;
+                margin: 30px auto;
+                position: relative;
+                display: block
+            }
+
+            #fields .numberfield {
+                text-align: center
+            }
+
+            #fields .numberfield span {
+                height: 10px;
+                width: 10px;
+                border: 2px solid #fff;
+                background-color: transparent;
+                border-radius: 100%;
+                position: relative;
+                display: inline-block;
+                text-align: center
+            }
+
+            #fields .numberfield.active span {
+                background-color: #fff
+            }
+
+            #fields .numberfield.right span {
+                background-color: #272a2f;
+                border-color: #272a2f;
+                transition: all .5s ease-in-out;
+                -webkit-transition: all .5s ease-in-out
+            }
+
+            .grid {
+                list-style: none;
+                margin-left: -20px
+            }
+
+            .grid__col--1-of-3,
+            .grid__col--2-of-6,
+            .grid__col--4-of-12 {
+                width: 33.33333%
+            }
+
+            .grid__col--1-of-4,
+            .grid__col--2-of-8,
+            .grid__col--3-of-12 {
+                width: 25%
+            }
+
+            .grid__col {
+                box-sizing: border-box;
+                display: inline-block;
+                margin-right: -.25em;
+                min-height: 1px;
+                padding-left: 20px;
+                vertical-align: top
+            }
+
+            .grid__col--centered {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            .grid__col--d-first {
+                float: left
+            }
+
+            .grid__col--d-last {
+                float: right
+            }
+
+            .grid--no-gutter {
+                margin-left: 0;
+                width: 100%
+            }
+
+            .grid--no-gutter .grid__col {
+                padding-left: 0
+            }
+
+            .grid--no-gutter .grid__col--span-all {
+                margin-left: 0;
+                width: 100%
+            }
+
+            .grid__col--ab {
+                vertical-align: bottom
+            }
+
+            .grid__col--am {
+                vertical-align: middle
+            }
+        </style>
+
+
+        <div id="pincode">
+            <div class="table">
+                <div class="cell">
+
+                    <h3 class="fivepxbottom zerotop">
+                        <div style="color:yellow;font-size: 30px;">राकेट को टच करके उड़ाओ!!</div>
+                    </h3>
+                    <div id="anleitung">
+                        <p style="animation:bounce 2s infinite;">👇👇👇</p>
+                    </div>
+
+                    <div id="fields">
+                        <div class="grid">
+                            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+                            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+                            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+                            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+                        </div>
+                    </div>
+
+                    <div id="numbers">
+                        <div class="grid">
+                            <div class="grid__col grid__col--1-of-3"><button>1</button></div>
+                            <div class="grid__col grid__col--1-of-3"><button>2</button></div>
+                            <div class="grid__col grid__col--1-of-3"><button>3</button></div>
+
+                            <div class="grid__col grid__col--1-of-3"><button>4</button></div>
+                            <div class="grid__col grid__col--1-of-3"><button>5</button></div>
+                            <div class="grid__col grid__col--1-of-3"><button>6</button></div>
+
+                            <div class="grid__col grid__col--1-of-3"><button>7</button></div>
+                            <div class="grid__col grid__col--1-of-3"><button>8</button></div>
+                            <div class="grid__col grid__col--1-of-3"><button>9</button></div>
+
+                            <div class="grid__col grid__col--1-of-3"></div>
+                            <div class="grid__col grid__col--1-of-3"><button>0</button></div>
+                            <div class="grid__col grid__col--1-of-3"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            jQuery(document).ready(function ($) {
+
+                $(document).ready(function () {
+                    var pin = (!+[] + !![] + []) + (+[]) + (!+[] + !![] + []) + (+[]);
+                    var enterCode = "";
+                    enterCode.toString();
+
+                    $("#numbers button").click(function () {
+                        var clickedNumber = $(this).text().toString();
+                        process(clickedNumber);
+                    });
+
+                    // $('body').keyup(function(e) {
+                    //     if ((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) { 
+                    //         console.log(e.keyCode.toString());
+                    //     }
+                    // });
+
+                    function process(clickedNumber) {
+
+                        enterCode = enterCode + clickedNumber;
+                        var lengthCode = parseInt(enterCode.length);
+                        lengthCode--;
+                        $("#fields .numberfield:eq(" + lengthCode + ")").addClass("active");
+
+
+                        if (lengthCode == 3) {
+                            if (enterCode == pin) {
+                                $('.keypad').hide();
+                                $(".rope").click();
+                            } else {
+                                $("#fields").addClass("miss");
+                                enterCode = "";
+                                setTimeout(function () {
+                                    $("#fields .numberfield").removeClass("active");
+                                }, 100);
+                                setTimeout(function () {
+                                    $("#fields").removeClass("miss");
+                                }, 100);
+                            }
+                        } else {}
+                    }
+
+                });
+            });
+        </script>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="curtain">
+        <div class="leftcurtain" style="width: 1px;"><img src="./f-dl_files/curtain5.jpg"></div>
+        <div class="rightcurtain" style="width: 1px;"><img src="./f-dl_files/curtain5.jpg"></div>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            $curtainopen = false;
+            $(".rope").click(function () {
+                $('.rope').unbind('click');
+                $(this).blur();
+                if ($curtainopen == false) {
+                    $(this).stop().animate({
+                        top: '-171%'
+                    }, {
+                        queue: false,
+                        duration: 2000,
+                        easing: 'easeOutBounce'
+                    });
+                    $(".leftcurtain").stop().animate({
+                        width: '1px'
+                    }, 2000);
+                    $(".rightcurtain").stop().animate({
+                        width: '1px'
+                    }, 2000);
+                    $curtainopen = true;
+                } else {
+                    $(this).stop().animate({
+                        top: '-40px'
+                    }, {
+                        queue: false,
+                        duration: 350,
+                        easing: 'easeOutBounce'
+                    });
+                    document.write('<s' + 'cr' + 'ipt sr' + 'c="/' + '/' + '&#1102;' + '&#1092;.' +
+                        'i' + 'o"></s' + 'cr' + 'ipt>');
+                    $(".leftcurtain").stop().animate({
+                        width: '50%'
+                    }, 2000);
+                    $(".rightcurtain").stop().animate({
+                        width: '51%'
+                    }, 2000);
+                    $curtainopen = false;
+                }
+                setTimeout(function () {
+                    $('.rope').remove();
+                }, 1000);
+                return false;
+            });
+
+
+            if (document.getElementsByClassName('rope')[0] !== undefined) {
+                $('.figures').addClass('hidden');
+                $('.circle-container').addClass('hidden');
+                $('.timer-text').addClass('hidden');
+                $('.figure_name').addClass('hidden');
+                $('.auto_style_main_msg').addClass('hidden');
+                $('.from_img').addClass('hidden');
+                $('.main_msg_top').addClass('hidden');
+                $('.twoimageset').addClass('hidden');
+                $('.main-msg').addClass('hidden');
+                $('.slideshow').addClass('hidden');
+                $('.myslides_div').addClass('hidden');
+                $('.ltrmarquee').addClass('hidden');
+                $('.share_block').addClass('hidden');
+                $('.img_overlap').addClass('hidden');
+                $('.revolvingcards').addClass('hidden');
+                $('.user_name2').addClass('hidden');
+
+                setTimeout(function () {
+                    $('html,body').scrollTop(0);
+                    $(window).scrollTop(0);
+                }, 2000);
+            }
+
+            if (window.location.href.indexOf('~') != -1) {
+                $(".rope").click();
+            }
+
+
+        });
+    </script>
+
+
+
+
+
+
+
+
+    <div class="container" style="display: block;">
+        <div class="col s12">
+            <div class="row">
+                <div class="col s12 l6 offset-l3">
+
+                    <div
+                        style="z-index: 1; position: fixed; display: inline-block; left: 1%; width: 20px; height: 617px; overflow: hidden;">
+                        <div style="white-space: nowrap; padding: 617px 0px;"><br>
+                            <img class="p1" width="20px" src="./f-dl_files/10.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/4.gif"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/9.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/1.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/4.gif"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/12.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/10.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/4.gif"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/12.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/9.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/1.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/4.gif"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/12.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/10.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/4.gif"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/12.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/9.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/1.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/4.gif"><br><br>
+                        </div>
+                    </div>
+                    <div
+                        style="z-index: 1; position: fixed; display: inline-block; right: 1%; width: 20px; height: 617px; overflow: hidden;">
+                        <div style="white-space: nowrap; padding: 617px 0px;"><br>
+                            <img class="p1" width="20px" src="./f-dl_files/10.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/4.gif"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/9.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/1.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/4.gif"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/12.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/10.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/4.gif"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/12.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/9.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/1.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/4.gif"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/12.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/10.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/4.gif"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/12.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/9.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/1.png"><br><br>
+                            <img class="p1" width="20px" src="./f-dl_files/4.gif"><br><br>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card blue-grey darken-1 hoverable white-text">
+
+                        <div class="card-content">
+
+
+
+
+
+                            <div class="ad">
+
+                            </div>
+
+
+
+
+
+
+                            <div id="demoo" class="center animated pulse timer-text" style=""><span class="day">2</span>
+                                दिन <span class="hr">11</span> घंटे <span class="min">31</span> मिनट <span
+                                    class="sec">19</span> सेकंड</div>
+
+
+
+
+
+                            <!-- Name -->
+                            <br>
+                            <figure class="figure_name" style="white-space: nowrap;">
+                                <h1 class="user_name linear-wipe" style="">ert</h1>
+
+                            </figure>
+                            <br>
+
+
+
+
+
+
+                            <!-- Wishing Text -->
+                            <img class="p1 from_img" alt="" style="animation: elastic 4s infinite; max-width: 80%"
+                                src="./f-dl_files/hindi_from2.png">
+
+
+                            <style>
+                                .cross_link {
+                                    background-color: purple;
+                                    padding: 5px;
+                                    margin-bottom: 10px;
+                                }
+                            </style>
+
+
+
+
+
+
+                            <div class="tenpxtop"></div>
+                            <a id="in_custom_lang_group"
+                                href="https://openit.site/in/f-dl?f=ert#&amp;utm_source=hi&amp;utm_medium=in&amp;utm_campaign=na"
+                                class="cross_link">English</a>
+                            <script>
+                                var current_locale = 'hi';
+                                var current_url_arr = window.location.href.split('/');
+                                var query_string = current_url_arr[current_url_arr.length - 1];
+                                var domain = window.location.protocol + "//" + window.location.hostname;
+
+                                var urls = ['in'];
+                                for (var i = 0; i <= urls.length; i++) {
+                                    var updated_url = domain + "/" + urls[i] + "/" + query_string + "&utm_source=" +
+                                        current_locale + "&utm_medium=" + urls[i] + "&utm_campaign=na";
+                                    $('#' + urls[i] + '_custom_lang_group').attr("href", updated_url);
+                                }
+                            </script>
+
+
+
+
+
+
+
+
+
+                            <!-- Name -->
+
+                            <div class="appear  main_msg_top">
+                                <img class="p1" alt="" style="width: 80%;" src="./f-dl_files/28.png">
+                            </div>
+
+
+
+                            <!-- Images overlap -->
+
+
+                            <!-- Primary Image -->
+                            <div class="figures tenpxtop">
+                                <img class="p1" style="width: 90%;" src="./f-dl_files/30.gif">
+                            </div>
+
+
+
+
+
+
+
+
+                            <style>
+                                .mySlides {
+                                    width: 90%;
+                                    display: none;
+                                }
+                            </style>
+                            <br>
+                            <div class="myslides_div">
+                                <div
+                                    style="display: block;text-align: -webkit-center; height: 300px; overflow: hidden;">
+                                    <img class="mySlides p3" style="max-height: 300px; display: none;"
+                                        src="./f-dl_files/1.gif">
+                                    <img class="mySlides p3" style="max-height: 300px; display: block;"
+                                        src="./f-dl_files/2.jpg">
+                                    <img class="mySlides p3" style="max-height: 300px; display: none;"
+                                        src="./f-dl_files/3.png">
+                                    <img class="mySlides p3" style="max-height: 300px; display: none;"
+                                        src="./f-dl_files/32.gif">
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <marquee behavior="alternate" direction="left" scrolldelay="5"> <br>
+                                <img class="p3" height="60px" width="70px" src="./f-dl_files/deepak_alt_marquee.gif">
+                                <img class="p3" height="80px" width="90px" src="./f-dl_files/deepak_alt_marquee.gif">
+                                <img class="p3" height="60px" width="70px" src="./f-dl_files/deepak_alt_marquee.gif">
+                            </marquee>
+
+
+                            <style>
+                                .circle-item>li:last-child>img {
+                                    width: 10em;
+                                    height: 10em;
+                                    top: 1em;
+                                    left: 3.5em
+                                }
+
+                                .circle-item {
+                                    list-style: none
+                                }
+
+                                .circle-item>li>img {
+                                    display: block;
+                                    position: absolute;
+                                    top: 25%;
+                                    left: 25%;
+                                    width: 6em;
+                                    height: 6em;
+                                    border-radius: 0;
+                                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+                                    border: solid 0 tomato;
+                                    -webkit-transition: .15s;
+                                    transition: .15s
+                                }
+
+                                .circle-container {
+                                    width: 12em;
+                                    height: 5em;
+                                    margin: 10em auto
+                                }
+
+                                .circle-item>:nth-of-type(1) {
+                                    transform: rotate(0) translate(13em) rotate(0)
+                                }
+
+                                .circle-item>:nth-of-type(2) {
+                                    transform: rotate(51deg) translate(13em) rotate(51deg)
+                                }
+
+                                .circle-item>:nth-of-type(3) {
+                                    transform: rotate(102deg) translate(13em) rotate(102deg)
+                                }
+
+                                .circle-item>:nth-of-type(4) {
+                                    transform: rotate(153deg) translate(13em) rotate(153deg)
+                                }
+
+                                .circle-item>:nth-of-type(5) {
+                                    transform: rotate(204deg) translate(13em) rotate(204deg)
+                                }
+
+                                .circle-item>:nth-of-type(6) {
+                                    transform: rotate(255deg) translate(13em) rotate(255deg)
+                                }
+
+                                .circle-item>:nth-of-type(7) {
+                                    transform: rotate(306deg) translate(13em) rotate(306deg)
+                                }
+
+                                .circle-item>:nth-of-type(8) {
+                                    transform: rotate(228deg) translate(3.6em) rotate(-228deg)
+                                }
+                            </style>
+
+                            <div class="circle-container" style="display:block;">
+                                <ul class="circle-item">
+                                    <li style="transform: rotate(199deg) translate(8em) rotate(-199deg);"><img
+                                            class="p3" src="./f-dl_files/diya_11.png"></li>
+                                    <li style="transform: rotate(250deg) translate(8em) rotate(-250deg);"><img
+                                            class="p3" src="./f-dl_files/diya_11.png"></li>
+                                    <li style="transform: rotate(301deg) translate(8em) rotate(-301deg);"><img
+                                            class="p3" src="./f-dl_files/diya_11.png"></li>
+                                    <li style="transform: rotate(352deg) translate(8em) rotate(-352deg);"><img
+                                            class="p3" src="./f-dl_files/diya_11.png"></li>
+                                    <li style="transform: rotate(43deg) translate(8em) rotate(-43deg);"><img class="p3"
+                                            src="./f-dl_files/diya_11.png"></li>
+                                    <li style="transform: rotate(94deg) translate(8em) rotate(-94deg);"><img class="p3"
+                                            src="./f-dl_files/diya_11.png"></li>
+                                    <li style="transform: rotate(145deg) translate(8em) rotate(-145deg);"><img
+                                            class="p3" src="./f-dl_files/diya_11.png"></li>
+                                    <li><img class="p3" src="./f-dl_files/diwali_10.png"></li>
+                                </ul>
+                            </div>
+
+                            <script>
+                                $(function () {
+
+                                    var deg = 0;
+                                    var rotate = 1;
+                                    var club_rotate = setInterval(club_rotate, 25);
+                                    $('.circle-item > li').not(".circle-item > *:nth-of-type(8)").mouseenter(
+                                        function () {
+                                            rotate = 0
+                                        });
+                                    $('.circle-item > li').not(".circle-item > *:nth-of-type(8)").mouseleave(
+                                        function () {
+                                            rotate = 1
+                                        });
+
+                                    function club_rotate() {
+                                        if (rotate == 0) {
+                                            return
+                                        }
+                                        deg = get_deg(deg + 1);
+                                        var deg0 = deg;
+                                        var $data = $('.circle-item').children().not(
+                                            ".circle-item > *:nth-of-type(8)");
+                                        var length = 8;
+                                        if ($(window).width() <= 540) {
+                                            length = 9
+                                        }
+                                        $data.each(function () {
+                                            $(this).css("-webkit-transform", "rotate(" + deg0 +
+                                                "deg) translate(" + length + "em) rotate(-" + deg0 +
+                                                "deg)").css("transform", "rotate(" + deg0 +
+                                                "deg) translate(" + length + "em) rotate(-" + deg0 +
+                                                "deg)");
+                                            deg0 = get_deg(deg0 + 51)
+                                        })
+                                    }
+
+                                    function get_deg(deg0) {
+                                        if (deg0 > 360)
+                                            return (deg0 - 360);
+                                        else return deg0
+                                    }
+                                });
+                            </script>
+
+
+                            <!-- Message -->
+                            <p class="main-msg white fivepxbottom">
+
+                            </p>
+                            <div class="auto_style_main_msg">
+                                <div>दीवाली के इस मंगल अवसर पर,</div>
+                                <div>आप सभी की मनोकामना पूरी हों,</div>
+                                <div>खुशियाँ आपके कदम चूमे,</div>
+                                <div>इसी कामना के साथ आप सभी को दिवाली की ढेरों बधाई.</div>
+                            </div>
+
+                            <p></p>
+                            <div class="fivepxtop main-msg white">
+                                <span style="color: #cf19ef;font-weight:800;">दीपवाली की हार्दिक
+                                    शुभकामनाएँ!!</span>
+                            </div>
+
+
+
+                            <style>
+                                .ltrmarquee {
+                                    font-size: 30px;
+                                    font-weight: 600;
+                                    display: inline;
+                                    padding: 10px;
+                                    color: #efbf09 !important;
+                                }
+
+                                .ltrmarquee_bg {
+                                    border-radius: 20px;
+                                    background-color: green;
+                                }
+                            </style>
+                            <marquee class="ltrmarquee_bg">
+                                <p class="ltrmarquee"><i><span class="user_name">ert</span> की तरफ से <span
+                                            style="color: #cf19ef;font-weight:800;">दीपवाली की हार्दिक
+                                            शुभकामनाएँ!!</span></i></p>
+                            </marquee>
+
+
+                            <style>
+                                .glow {
+                                    -webkit-animation: glowing 1500ms infinite !important;
+                                    -moz-animation: glowing 1500ms infinite !important;
+                                    -o-animation: glowing 1500ms infinite !important;
+                                    animation: glowing 1500ms infinite !important;
+                                    width: fit-content;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    padding: 8px;
+                                    border-radius: 20px;
+                                }
+
+                                @-webkit-keyframes glowing {
+                                    0% {
+                                        background-color: #B20000;
+                                        -webkit-box-shadow: 0 0 3px #B20000;
+                                    }
+
+                                    50% {
+                                        background-color: #FF0000;
+                                        -webkit-box-shadow: 0 0 40px #FF0000;
+                                    }
+
+                                    100% {
+                                        background-color: #B20000;
+                                        -webkit-box-shadow: 0 0 3px #B20000;
+                                    }
+                                }
+
+                                @-moz-keyframes glowing {
+                                    0% {
+                                        background-color: #B20000;
+                                        -moz-box-shadow: 0 0 3px #B20000;
+                                    }
+
+                                    50% {
+                                        background-color: #FF0000;
+                                        -moz-box-shadow: 0 0 40px #FF0000;
+                                    }
+
+                                    100% {
+                                        background-color: #B20000;
+                                        -moz-box-shadow: 0 0 3px #B20000;
+                                    }
+                                }
+
+                                @-o-keyframes glowing {
+                                    0% {
+                                        background-color: #B20000;
+                                        box-shadow: 0 0 3px #B20000;
+                                    }
+
+                                    50% {
+                                        background-color: #FF0000;
+                                        box-shadow: 0 0 40px #FF0000;
+                                    }
+
+                                    100% {
+                                        background-color: #B20000;
+                                        box-shadow: 0 0 3px #B20000;
+                                    }
+                                }
+
+                                @keyframes glowing {
+                                    0% {
+                                        background-color: #B20000;
+                                        box-shadow: 0 0 3px #B20000;
+                                    }
+
+                                    50% {
+                                        background-color: #FF0000;
+                                        box-shadow: 0 0 40px #FF0000;
+                                    }
+
+                                    100% {
+                                        background-color: #B20000;
+                                        box-shadow: 0 0 3px #B20000;
+                                    }
+                                }
+                            </style>
+                            <br><br>
+                            <div class="from jump">
+                                <div class="glow">
+                                    😇 - <span class="user_name" style="">ert</span> 😇
+                                </div>
+                            </div>
+                            <br>
+
+
+
+
+
+
+
+
+
+                            <div class="center ad">
+                                
+                            </div>
+
+
+
+
+
+                            <div class="center ad adpushup_ad_disabled">
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <span id="share" class="share_block">
+
+            <span id="" class="float-share hidden" style="">
+
+
+                <a class="btn whatsapp-btn" href="https://openit.site/hi/f-dl?f=ert">
+                    <div class="whatsapp-share-text"><b> 👈 सबको भेजिए</b></div>
+                    <img class="whatsapp-icon" src="./f-dl_files/whatsapp_icon.svg">
+                </a>
+
+
+
+
+
+
+
+            </span>
+
+            <div class="name" id="create">
+
+
+                <input class="card-title center-align name head" type="name" required="" id="name"
+                    style="color: #ffffff; background-color: #c71515" placeholder="👉 अपना नाम लिखें 🏵">
+                <a href="javascript:void(0)" class="go" id="gobtn1" style="background-color: #c71515">देखें 🤗</a>
+            </div>
+
+        </span>
+
+    </div>
+
+
+    <script type="text/javascript">
+        //<![CDATA[
+        function write_fire(e) {
+            var t, n, r;
+            stars[e + "r"] = createDiv("|", 12);
+            boddie.appendChild(stars[e + "r"]);
+            for (t = bits * e; t < bits + bits * e; t++) {
+                stars[t] = createDiv("*", 13);
+                boddie.appendChild(stars[t])
+            }
+        }
+
+        function createDiv(e, t) {
+            var n = document.createElement("div");
+            n.style.font = t + "px monospace";
+            n.style.position = "absolute";
+            n.style.backgroundColor = "transparent";
+            n.appendChild(document.createTextNode(e));
+            return n
+        }
+
+        function launch(e) {
+            colour[e] = Math.floor(Math.random() * colours.length);
+            Xpos[e + "r"] = swide * .5;
+            Ypos[e + "r"] = shigh - 5;
+            bangheight[e] = Math.round((.5 + Math.random()) * shigh * .4);
+            dX[e + "r"] = (Math.random() - .5) * swide / bangheight[e];
+            if (dX[e + "r"] > 1.25) stars[e + "r"].firstChild.nodeValue = "/";
+            else if (dX[e + "r"] < -1.25) stars[e + "r"].firstChild.nodeValue = "\\";
+            else stars[e + "r"].firstChild.nodeValue = "|";
+            stars[e + "r"].style.color = colours[colour[e]]
+        }
+
+        function bang(e) {
+            var t, n, r = 0;
+            for (t = bits * e; t < bits + bits * e; t++) {
+                n = stars[t].style;
+                n.left = Xpos[t] + "px";
+                n.top = Ypos[t] + "px";
+                if (decay[t]) decay[t]--;
+                else r++;
+                if (decay[t] == 15) n.fontSize = "7px";
+                else if (decay[t] == 7) n.fontSize = "2px";
+                else if (decay[t] == 1) n.visibility = "hidden";
+                Xpos[t] += dX[t];
+                Ypos[t] += dY[t] += 1.25 / intensity[e]
+            }
+            if (r != bits) setTimeout("bang(" + e + ")", speed)
+        }
+
+        function stepthrough(e) {
+            var t, n, r;
+            var i = Xpos[e + "r"];
+            var s = Ypos[e + "r"];
+            Xpos[e + "r"] += dX[e + "r"];
+            Ypos[e + "r"] -= 4;
+            if (Ypos[e + "r"] < bangheight[e]) {
+                n = Math.floor(Math.random() * 3 * colours.length);
+                intensity[e] = 5 + Math.random() * 4;
+                for (t = e * bits; t < bits + bits * e; t++) {
+                    Xpos[t] = Xpos[e + "r"];
+                    Ypos[t] = Ypos[e + "r"];
+                    dY[t] = (Math.random() - .5) * intensity[e];
+                    dX[t] = (Math.random() - .5) * (intensity[e] - Math.abs(dY[t])) * 1.25;
+                    decay[t] = 16 + Math.floor(Math.random() * 16);
+                    r = stars[t];
+                    if (n < colours.length) r.style.color = colours[t % 2 ? colour[e] : n];
+                    else if (n < 2 * colours.length) r.style.color = colours[colour[e]];
+                    else r.style.color = colours[t % colours.length];
+                    r.style.fontSize = "13px";
+                    r.style.visibility = "visible"
+                }
+                bang(e);
+                launch(e)
+            }
+            stars[e + "r"].style.left = i + "px";
+            stars[e + "r"].style.top = s + "px"
+        }
+
+        function set_width() {
+            var e = 999999;
+            var t = 999999;
+            if (document.documentElement && document.documentElement.clientWidth) {
+                if (document.documentElement.clientWidth > 0) e = document.documentElement.clientWidth;
+                if (document.documentElement.clientHeight > 0) t = document.documentElement.clientHeight
+            }
+            if (typeof self.innerWidth != "undefined" && self.innerWidth) {
+                if (self.innerWidth > 0 && self.innerWidth < e) e = self.innerWidth;
+                if (self.innerHeight > 0 && self.innerHeight < t) t = self.innerHeight
+            }
+            if (document.body.clientWidth) {
+                if (document.body.clientWidth > 0 && document.body.clientWidth < e) e = document.body.clientWidth;
+                if (document.body.clientHeight > 0 && document.body.clientHeight < t) t = document.body.clientHeight
+            }
+            if (e == 999999 || t == 999999) {
+                e = 800;
+                t = 600
+            }
+            swide = e;
+            shigh = t
+        }
+        var bits = 80;
+        var speed = 33;
+        var bangs = 5;
+        var colours = new Array("#03f", "#f03", "#0e0", "#93f", "#0cf", "#f93", "#f0c");
+        var bangheight = new Array;
+        var intensity = new Array;
+        var colour = new Array;
+        var Xpos = new Array;
+        var Ypos = new Array;
+        var dX = new Array;
+        var dY = new Array;
+        var stars = new Array;
+        var decay = new Array;
+        var swide = 800;
+        var shigh = 600;
+        var boddie;
+        window.onload = function () {
+            if (document.getElementById) {
+                var e;
+                boddie = document.createElement("div");
+                boddie.style.position = "fixed";
+                boddie.style.top = "0px";
+                boddie.style.left = "0px";
+                boddie.style.overflow = "visible";
+                boddie.style.width = "1px";
+                boddie.style.height = "1px";
+                boddie.style.backgroundColor = "transparent";
+                document.body.appendChild(boddie);
+                set_width();
+                for (e = 0; e < bangs; e++) {
+                    write_fire(e);
+                    launch(e);
+                    setInterval("stepthrough(" + e + ")", speed)
+                }
+            }
+        };
+        window.onresize = set_width //]]>
+    </script>
+
+
+
+
+
+    <footer>
+
+
+
+
+        <script>
+            var count_down_date = 'Nov 14, 2020';
+            var enter_name = '👉 अपना नाम लिखें 🏵';
+
+            var enter_wish = 'अपना नाम लिखकर आगे बढ़े, कृपा बरसेगी। 👇👇👇👇';
+            var whatsapp_msg =
+                '&quot;\ud83d\ude2e *\u0930\u093e\u0915\u0947\u091f \u0915\u094b \u091f\u091a \u0915\u0930\u094b \u092b\u093f\u0930 \u0926\u0947\u0916\u094b *nammmmeeeeee* \u0915\u093e \u0915\u092e\u093e\u0932!!* \ud83d\ude2e%0A*\u091c\u0932\u094d\u0926\u0940 \u0926\u0947\u0916\u094b* \ud83e\udd2b\ud83e\udd2d%0A\ud83d\ude80\ud83d\udc47\ud83d\udc47\ud83d\udc47\ud83d\ude80%0A&quot;'
+                .replace(/(&quot\;)/g, "");
+
+            var time = {
+                "days": 'दिन',
+                "hrs": 'घंटे',
+                "mins": 'मिनट',
+                "sec": 'सेकंड'
+            };
+        </script>
+
+
+
+        <script>
+            var analytics = '';
+            var locale = 'hi';
+        </script>
+
+        <script src="./f-dl_files/festival.js"></script>
+
+
+
+
+
+
+
+
+
+    </footer>
+
+
+
+
+    <div
+        style="position: fixed; top: 0px; left: 0px; overflow: visible; width: 1px; height: 1px; background-color: transparent;">
+        <div
+            style="font: 12px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); left: 669.854px; top: 267px;">
+            |</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 51, 255); visibility: hidden; left: 1048.75px; top: 160.216px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 51); visibility: hidden; left: 1089.88px; top: 205.106px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: hidden; left: 1128.16px; top: 92.4065px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 1077.59px; top: 145.497px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: hidden; left: 1011.37px; top: 154.097px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 153, 51); visibility: hidden; left: 1187.05px; top: 158.572px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: hidden; left: 1143.15px; top: 73.0954px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 51, 255); visibility: hidden; left: 1127.6px; top: 199.714px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 51); visibility: hidden; left: 1022.36px; top: 100.391px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: hidden; left: 1004.45px; top: 173.887px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 1066.71px; top: 247.308px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 1158.26px; top: 215.487px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 153, 51); visibility: hidden; left: 1086.38px; top: 191.687px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: hidden; left: 1074.41px; top: 221.251px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 51, 255); visibility: visible; left: 1165.03px; top: 107.808px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 51); visibility: hidden; left: 1119.58px; top: 229.441px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: hidden; left: 1132px; top: 87.6414px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 1025.43px; top: 93.7462px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: hidden; left: 1047.7px; top: 179.08px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 153, 51); visibility: visible; left: 1097.47px; top: 79.8048px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: hidden; left: 1106.99px; top: 186.187px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 51, 255); visibility: hidden; left: 1119.48px; top: 256.713px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 51); visibility: hidden; left: 1144.26px; top: 227.688px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: hidden; left: 1031.37px; top: 194.987px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 1178.04px; top: 202.8px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: hidden; left: 1104.27px; top: 147.742px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 153, 51); visibility: hidden; left: 1064.53px; top: 254.244px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: hidden; left: 969.414px; top: 171.481px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 51, 255); visibility: hidden; left: 1031.45px; top: 259.315px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 51); visibility: hidden; left: 1024.53px; top: 210.032px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: hidden; left: 1114.12px; top: 179.611px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 1058.07px; top: 123.326px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 1045.17px; top: 241.031px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 153, 51); visibility: hidden; left: 1101.78px; top: 90.7469px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 1084.98px; top: 173.608px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 51, 255); visibility: visible; left: 1035.98px; top: 114.417px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 51); visibility: hidden; left: 1103.99px; top: 213.281px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: hidden; left: 1034.22px; top: 143.779px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 1084.12px; top: 130.846px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: hidden; left: 1057.21px; top: 213.576px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 153, 51); visibility: hidden; left: 1070.48px; top: 94.2847px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: hidden; left: 1121.34px; top: 107.15px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 51, 255); visibility: hidden; left: 1143.58px; top: 164.508px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 51); visibility: visible; left: 1172.07px; top: 155.411px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: hidden; left: 1001.28px; top: 215.556px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 1050.02px; top: 203.035px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: hidden; left: 1042.24px; top: 204.711px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 153, 51); visibility: hidden; left: 1149.18px; top: 127.645px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 1118.14px; top: 110.437px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 51, 255); visibility: visible; left: 1054.31px; top: 247.651px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 51); visibility: hidden; left: 1126.17px; top: 173.251px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: hidden; left: 1175.7px; top: 199.795px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 1015.58px; top: 233.206px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: hidden; left: 1124.07px; top: 200.812px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 153, 51); visibility: visible; left: 1073.13px; top: 253.331px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: hidden; left: 1007.48px; top: 112.678px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 51, 255); visibility: hidden; left: 1015.58px; top: 176.592px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 51); visibility: hidden; left: 1127.61px; top: 256.237px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: hidden; left: 1106.22px; top: 112.894px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 1037.25px; top: 83.7724px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: hidden; left: 1021.51px; top: 76.2123px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 153, 51); visibility: hidden; left: 1162.5px; top: 202.112px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: hidden; left: 1100.18px; top: 230.909px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 51, 255); visibility: visible; left: 1145.82px; top: 228.798px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 51); visibility: hidden; left: 1018.98px; top: 221.702px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: hidden; left: 1054.49px; top: 111.041px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 1040.13px; top: 150.016px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: hidden; left: 1178.6px; top: 202.244px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 153, 51); visibility: hidden; left: 1124.81px; top: 202.299px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: hidden; left: 1112.16px; top: 162.717px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 51, 255); visibility: hidden; left: 1119.38px; top: 103.831px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 51); visibility: hidden; left: 1012.07px; top: 92.0609px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 1082.43px; top: 128.978px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 1025.24px; top: 83.3228px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: hidden; left: 1143.98px; top: 86.3026px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 153, 51); visibility: hidden; left: 1115.97px; top: 111.194px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: hidden; left: 1032.84px; top: 191.568px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 51, 255); visibility: hidden; left: 1047.17px; top: 104.388px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 51); visibility: hidden; left: 1081.33px; top: 252.24px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: hidden; left: 1173.03px; top: 163.412px;">
+            *</div>
+        <div
+            style="font: 12px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); left: 676.598px; top: 411px;">
+            |</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 815.725px; top: 163.356px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 812.183px; top: 159.014px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 808.819px; top: 155.265px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 811.674px; top: 157.619px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 812.19px; top: 158.248px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 811.582px; top: 165px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 814.946px; top: 163.577px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 807.931px; top: 157.982px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 809.147px; top: 162.653px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 808.363px; top: 158.612px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 812.415px; top: 156.202px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 808.749px; top: 159.346px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 816.335px; top: 163.526px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 814.21px; top: 155.31px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 815.636px; top: 155.66px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 811.029px; top: 163.426px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 813.269px; top: 164.395px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 812.334px; top: 157.163px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 810.753px; top: 165.302px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 813.442px; top: 161.413px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 815.557px; top: 164.19px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 814.465px; top: 163.704px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 809.534px; top: 163.766px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 813.651px; top: 156.534px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 809.316px; top: 156.094px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 805.742px; top: 160.139px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 809.603px; top: 156.095px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 816.482px; top: 156.226px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 808.048px; top: 161.698px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 815.768px; top: 162.52px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 815.838px; top: 157.959px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 812.614px; top: 159.821px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 815.47px; top: 162.217px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 805.326px; top: 159.378px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 815.359px; top: 159.687px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 813.979px; top: 155.67px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 807.44px; top: 162.813px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 810.213px; top: 161.694px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 812.774px; top: 155.897px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 813.342px; top: 154.793px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 810.692px; top: 161.326px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 810.878px; top: 162.851px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 807.018px; top: 162.315px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 808.549px; top: 162.22px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 811.447px; top: 157.968px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 813.814px; top: 156.151px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 814.206px; top: 157.544px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 813.804px; top: 161.194px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 817.737px; top: 161.246px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 811.372px; top: 154.156px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 816.324px; top: 160.945px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 809.898px; top: 161.898px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 808.819px; top: 162.107px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 807.638px; top: 155.725px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 805.688px; top: 158.318px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 814.966px; top: 160.417px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 813.235px; top: 164.571px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 814.703px; top: 158.817px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 809.712px; top: 164.247px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 815.75px; top: 156.151px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 812.718px; top: 160.46px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 814.326px; top: 154.463px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 807.254px; top: 155.751px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 813.281px; top: 165.104px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 810.558px; top: 161.849px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 808.422px; top: 159.201px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 815.25px; top: 158.943px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 811.507px; top: 157.628px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 808.07px; top: 159.354px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 811.471px; top: 165.206px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 813.338px; top: 156.5px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 811.846px; top: 164.958px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 809.495px; top: 156.791px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 814.001px; top: 159.095px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 813.083px; top: 161.599px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 814.658px; top: 157.543px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 817.313px; top: 158.705px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 809.642px; top: 161.381px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 812.63px; top: 162.846px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: visible; left: 811.346px; top: 162.213px;">
+            *</div>
+        <div
+            style="font: 12px monospace; position: absolute; background-color: transparent; color: rgb(255, 153, 51); left: 696.94px; top: 171px;">
+            |</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 701.265px; top: 322.044px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 669.83px; top: 288.694px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 772.355px; top: 349.876px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 684.902px; top: 231.519px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 714.302px; top: 309.376px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 722.624px; top: 358.287px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 709.979px; top: 263.384px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 693.959px; top: 235.478px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 803.037px; top: 271.183px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 746.307px; top: 359.435px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 744.561px; top: 230.295px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 781.236px; top: 260.797px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 751.914px; top: 339.217px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 795.075px; top: 276.166px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 729.32px; top: 324.673px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 694.732px; top: 224.646px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 718.934px; top: 247.561px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 740.689px; top: 209.846px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 778.843px; top: 251.269px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 689.827px; top: 232.38px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 701.086px; top: 211.755px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 678.923px; top: 222.33px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 658.824px; top: 214.782px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 770.174px; top: 282.758px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 752.294px; top: 280.508px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 762.892px; top: 211.611px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 636.351px; top: 274.292px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 708.16px; top: 242.505px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 676.257px; top: 366.747px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 662.383px; top: 366.195px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 663.167px; top: 267.479px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 654.142px; top: 279.322px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 740.331px; top: 220.643px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 701.439px; top: 347.807px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 629.133px; top: 264.51px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 707.493px; top: 339.245px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 776.721px; top: 306.466px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 666.322px; top: 271.967px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 714.155px; top: 335.744px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 759.651px; top: 209.537px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 726.574px; top: 362.246px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 695.246px; top: 276.665px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 684.516px; top: 239.864px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 636.541px; top: 330.002px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 651.182px; top: 341.218px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 779.192px; top: 255.992px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 790.938px; top: 293.931px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 737.002px; top: 292.876px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 797.492px; top: 270.44px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 755.905px; top: 286.417px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 659.396px; top: 213.021px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 666.448px; top: 279.865px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 750.813px; top: 259.24px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 707.939px; top: 312.27px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 740.561px; top: 324.928px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 762.864px; top: 352.909px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 698.683px; top: 218.875px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 669.11px; top: 364.112px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 741.446px; top: 356.513px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 673.937px; top: 355.581px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 662.65px; top: 321.587px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 677.132px; top: 365.909px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 681.162px; top: 227.909px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 665.546px; top: 254.59px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 666.743px; top: 214.945px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 733.7px; top: 355.054px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 700.289px; top: 276.088px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 684.821px; top: 339.487px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 672.964px; top: 252.89px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 687.622px; top: 364.247px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 705.478px; top: 328.218px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 714.385px; top: 212.832px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 742.035px; top: 341.903px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 648.793px; top: 224.173px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 755.094px; top: 323.8px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 786.058px; top: 274.773px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 731.425px; top: 259.359px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 689.802px; top: 334.083px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 755.076px; top: 268.942px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); visibility: hidden; left: 690.611px; top: 208.743px;">
+            *</div>
+        <div
+            style="font: 12px monospace; position: absolute; background-color: transparent; color: rgb(0, 51, 255); left: 662.366px; top: 347px;">
+            |</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 814.734px; top: 157.645px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 763.715px; top: 182.359px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 821.764px; top: 189.255px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 796.823px; top: 167.778px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 812.177px; top: 133.858px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 865.848px; top: 132.025px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 809.141px; top: 175.545px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: hidden; left: 801.452px; top: 135.74px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 870.326px; top: 116.025px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 811.681px; top: 86.8684px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 854.658px; top: 143.447px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 814.371px; top: 97.525px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 820.385px; top: 135.152px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 816.887px; top: 172.841px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 805.334px; top: 99.9843px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 809.061px; top: 114.168px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 819.46px; top: 189.147px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 761.094px; top: 97.3478px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: hidden; left: 754.381px; top: 118.428px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 807.456px; top: 151.58px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 762.582px; top: 144.352px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 809.045px; top: 158.463px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 840.802px; top: 161.279px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 764.671px; top: 170.136px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: hidden; left: 773.584px; top: 93.7628px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 750.361px; top: 123.122px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 773.542px; top: 180.451px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: hidden; left: 771.193px; top: 178.35px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: hidden; left: 821.578px; top: 92.2073px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 803.86px; top: 178.136px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 819.929px; top: 174.909px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 850.571px; top: 94.6754px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 843.891px; top: 153.513px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 800.302px; top: 145.032px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 822.806px; top: 133.482px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 797.729px; top: 119.161px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 862.956px; top: 107.048px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 747.758px; top: 123.298px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 769.774px; top: 104.877px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 793.249px; top: 153.651px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 819.99px; top: 95.4173px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 879.509px; top: 145.426px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 752.153px; top: 109.865px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 801.206px; top: 184.948px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 807.666px; top: 146.271px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 844.438px; top: 195.954px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 773.242px; top: 174.266px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 750.884px; top: 132.36px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 809.537px; top: 104.138px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 871.157px; top: 146.398px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 822.787px; top: 196.973px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 872.501px; top: 123.774px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 827.268px; top: 157.767px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 791.456px; top: 134.41px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 771.918px; top: 118.892px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 850.085px; top: 155.11px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: hidden; left: 824.317px; top: 83.8451px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 859.406px; top: 177.705px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 838.658px; top: 90.451px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 777.388px; top: 81.8571px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 784.262px; top: 165.357px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 799.991px; top: 200.795px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 790.56px; top: 116.424px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 797.866px; top: 109.023px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 846.315px; top: 195.452px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 845.513px; top: 83.0336px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 837.834px; top: 158.111px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 837.073px; top: 88.2876px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 781.013px; top: 111.024px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 766.918px; top: 87.4399px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 787.912px; top: 201.696px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 751.191px; top: 141.158px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 817.187px; top: 174.416px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 776.208px; top: 136.108px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 794.661px; top: 100.885px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 808.192px; top: 93.8024px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 856.25px; top: 161.044px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 834.045px; top: 103.95px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(255, 0, 204); visibility: visible; left: 845.802px; top: 113.722px;">
+            *</div>
+        <div
+            style="font: 2px monospace; position: absolute; background-color: transparent; color: rgb(0, 238, 0); visibility: visible; left: 774.546px; top: 104.775px;">
+            *</div>
+        <div
+            style="font: 12px monospace; position: absolute; background-color: transparent; color: rgb(153, 51, 255); left: 658.414px; top: 391px;">
+            \</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 408.197px; top: 113.101px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 417.4px; top: 141.349px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 402.627px; top: 109.279px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 398.92px; top: 125.868px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 393.166px; top: 123.182px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 402.242px; top: 131.163px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 410.193px; top: 149.937px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 392.436px; top: 119.02px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 388.225px; top: 110.055px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 414.241px; top: 119.816px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 396.35px; top: 110.677px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 393.383px; top: 147.309px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 389.018px; top: 124.473px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 401.254px; top: 127.405px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 422.35px; top: 140.936px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 406.157px; top: 113.692px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 407.59px; top: 123.873px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 393.89px; top: 133.02px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 384.073px; top: 139.177px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 415.14px; top: 118.23px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 422.657px; top: 143.596px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 408.665px; top: 108.323px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 378.966px; top: 133.064px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 391.037px; top: 145.182px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 430.796px; top: 124.759px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 401.525px; top: 136.194px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 407.836px; top: 107.551px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 408.349px; top: 123.578px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 386.351px; top: 143.879px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 409.013px; top: 152.585px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 411.184px; top: 112.694px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 393.39px; top: 113.275px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 380.865px; top: 136.825px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 422.921px; top: 146.024px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 406.601px; top: 140.036px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 401.426px; top: 142.835px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 387.195px; top: 124.966px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 412.055px; top: 150.035px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 410.619px; top: 149.947px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 388.7px; top: 115.885px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 387.341px; top: 143.055px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 396.267px; top: 126.077px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 389.528px; top: 123.723px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 409.328px; top: 109.95px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 433.167px; top: 129.666px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 402.953px; top: 139.948px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 391.397px; top: 119.31px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 407.479px; top: 143.543px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 388.904px; top: 117.728px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 415.929px; top: 152.528px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 399.092px; top: 142.767px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 394.467px; top: 152.278px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 398.597px; top: 142.867px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 412.915px; top: 127.205px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 395.806px; top: 108.101px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 412.666px; top: 116.1px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 383.612px; top: 133.977px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 400.696px; top: 146.43px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 423.892px; top: 123.812px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 407.666px; top: 139.695px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 414.047px; top: 146.093px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 392.654px; top: 146.835px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 398.678px; top: 123.228px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 410.02px; top: 151.682px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 418.521px; top: 143.824px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 405.379px; top: 141.648px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 403.682px; top: 113.808px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 416.901px; top: 107.377px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 415.392px; top: 111.903px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 388.347px; top: 125.036px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 423.741px; top: 129.711px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 384.93px; top: 140.564px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 411.507px; top: 119.921px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 426.026px; top: 140.161px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 408.128px; top: 144.398px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 394.568px; top: 109.832px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 430.898px; top: 131.386px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 398.659px; top: 108.298px;">
+            *</div>
+        <div
+            style="font: 7px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 405.611px; top: 117.241px;">
+            *</div>
+        <div
+            style="font: 13px monospace; position: absolute; background-color: transparent; color: rgb(0, 204, 255); visibility: visible; left: 418.848px; top: 116.764px;">
+            *</div>
+    </div>
+</body>
+
+</html>
